@@ -9,4 +9,4 @@ The first dimension is the number of records or rows in the dataset which is 113
 
 ### Building the model and making Predictions 
 
- A Long Short-Term Model was built using Keras which had 50 units, 4 hidden layers and a dense layer (output) to predict the normalized closing stock price. The model was compile using the mean squared error as loss function and to reduce the loss or to optimize the algorithm, I used the Adam optimizer. Lastly, the model was fit and passed to the training features  with epoch = 100, batch_size = 32. Lastly, a test data set was created to test the model and get predictions. This was then compared with actual prices. 
+ A Long Short-Term Model was built using Keras which had 50 units, 4 hidden layers and a dense layer (output) to predict the normalized closing stock price. The model was compile using the mean squared error as loss function and to reduce the loss or to optimize the algorithm, I used the Adam optimizer. Lastly, the model was fit and passed to the training features and a test data set was created to test the model and get predictions.
