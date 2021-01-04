@@ -4,8 +4,8 @@ In this project, I extracted the TESLA stock prices data from Yahoo Finance for 
 
 ### Data Preparation 
 
-I created a new data frame containing only the target variable - Closing stock price and converted it into an array to train the model. For this project, traning dataset had 75% of values.With time series data, the sequence of values is important. The LSTM network expects the input data to be provided in 3D array structure: [samples, time steps, features]. Currently, the data is in the form: [samples, features] We can transform the prepared train and test input data into the expected structure using numpy.reshape().
-The first dimension is the number of records or rows in the dataset which is 1134 in our case. The second dimension is the number of time steps which is 180 while the last dimension is the number of indicators. Since we are only using one feature, i.e Close, the number of indicators will be one.
+I created a new data frame containing only the target variable - Closing stock price and converted it into an array to train the model. For this project, traning dataset had 75% of values. With time series data, the sequence of values is important. The LSTM network expects the input data to be provided in 3D array structure: [samples, time steps, features]. Currently, the data is in the form: [samples, features] I transformed the train and test input data into the expected structure using numpy.reshape().
+The first dimension is the number of records or rows in the dataset which is 1134 in our case. The second dimension is the number of time steps which is 180 while the last dimension is the number of indicators. Since I used only one feature, i.e Close, the number of indicators will be one.
 
 ### Building the model and making Predictions 
 
